@@ -1,0 +1,39 @@
+.sales-card {
+  background: linear-gradient(145deg, #4a90e2, #50e3c2);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(74, 144, 226, 0.4);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  margin: 20px;
+}
+
+.sales-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 30px rgba(74, 144, 226, 0.6);
+}
+
+.sales-card h2 {
+  font-size: 1.75em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.chartjs-render-monitor {
+  background: #f0f2f5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.sales-card canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Improve visibility of the graph line */
+.chartjs-render-monitor .chartjs-line-chart path {
+  stroke: #ccc;  /* Change line color to light grey */
+  stroke-width: 2px;  /* Keep line width */
+}
